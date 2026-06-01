@@ -861,6 +861,9 @@ function trialRoutineEnd(snapshot) {
     }
     psychoJS.experiment.addData('trial.stopped', globalClock.getTime());
     psychoJS.experiment.addData('textbox.text',textbox.text)
+    psychoJS.experiment.addData('response', textbox.text);
+    psychoJS.experiment.addData('statement', pos);
+    psychoJS.experiment.addData('context', PCWA);
     // store data for psychoJS.experiment (ExperimentHandler)
     psychoJS.experiment.addData('mouse.x', mouse.x);
     psychoJS.experiment.addData('mouse.y', mouse.y);
@@ -1078,6 +1081,7 @@ function Q1RoutineEnd(snapshot) {
     }
     psychoJS.experiment.addData('Q1.stopped', globalClock.getTime());
     psychoJS.experiment.addData('textbox_2.text',textbox_2.text)
+    psychoJS.experiment.addData('Q1_answer', textbox_2.text);
     // store data for psychoJS.experiment (ExperimentHandler)
     psychoJS.experiment.addData('mouse_2.x', mouse_2.x);
     psychoJS.experiment.addData('mouse_2.y', mouse_2.y);
@@ -1295,6 +1299,7 @@ function Q2RoutineEnd(snapshot) {
     }
     psychoJS.experiment.addData('Q2.stopped', globalClock.getTime());
     psychoJS.experiment.addData('textbox_3.text',textbox_3.text)
+    psychoJS.experiment.addData('Q2_answer', textbox_3.text);
     // store data for psychoJS.experiment (ExperimentHandler)
     psychoJS.experiment.addData('mouse_3.x', mouse_3.x);
     psychoJS.experiment.addData('mouse_3.y', mouse_3.y);
